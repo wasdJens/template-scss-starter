@@ -1,0 +1,28 @@
+{
+  "name": "template-scss-starter",
+  "version": "1.0.0",
+  "description": "Blueprint to compile a stylesheet project to a single css file",
+  "main": "build/index.js",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepare": "husky install",
+    "prettier": "prettier --write ."
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.1",
+    "postcss": "^8.3.6",
+    "prettier": "2.3.2",
+    "rollup": "^2.54.0",
+    "rollup-plugin-scss": "^3.0.0",
+    "sass": "^1.36.0"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
